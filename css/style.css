@@ -1,8 +1,28 @@
 /* Figma link:https://www.figma.com/design/hE5klIn1AEQ9XWZWmurs7y/Learning-Journal-Blog?node-id=0-1&t=kHc8b5mPC14kBKwV-0 */
 /* Learning Journal hints:https://different-marmoset-f7b.notion.site/Learning-Journal-cbe9e2728d6149e0b3efbb1f139be122 */
 
-html,
-body {
-  margin: 0;
+*,
+*::after,
+*::before {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 50%;
+}
+
+header img {
+  width: 1%;
+}
+
+.intro {
+  background-image: url("/images/Laptop\ Sunset.png");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
