@@ -25,10 +25,15 @@
   --heading-color: #0e0e0e;
   --default-white: #ffffff;
   --heading_nav-color: #090909;
+  --blog-text: #505050;
 }
 /* Utility Class */
 .left_right-padding {
   padding: 0 1.5em 0 1.5em;
+}
+
+.blog-text {
+  color: var(--blog-text);
 }
 
 /*** Mobile ***/
@@ -97,6 +102,21 @@ main > a:hover {
 }
 
 /* Posts */
-img {
-  width: 50%;
+.posts {
+  display: grid;
+  gap: 2.5em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
+
+article > img {
+  width: 100%;
+  border-radius: 3px;
+  padding-bottom: 0.4em;
+}
+article > h2 {
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+}
+
+/** Footer **/
