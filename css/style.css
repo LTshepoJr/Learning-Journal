@@ -25,18 +25,44 @@
   --heading-color: #0e0e0e;
   --default-white: #ffffff;
   --heading_nav-color: #090909;
-  --blog-text: #505050;
+  --blog_text-color: #505050;
   --footer_bg-color: #202020;
   --footer-color: #ececec;
   --copyright-color: #d7d7d7;
+  --date-color: #151515;
+  --blog_title-color: #141414;
+  --12px_font-size: 0.75em;
+  --14px_font-size: 0.89rem;
+  --letter-space-3: -3%;
 }
+
+img {
+  width: 100%;
+}
+
 /* Utility Class */
 .left_right-padding {
   padding: 0 1.5em 0 1.5em;
 }
 
+.twelve_px_font-size {
+  font-size: var(--12px_font-size);
+}
+
+.fourteen_px_font-size {
+  font-size: var(--14px_font-size);
+}
+
+.up_down-padding {
+  padding: 0.9em 0 0.9em 0;
+}
+
 .blog-text {
-  color: var(--blog-text);
+  color: var(--blog_text-color);
+}
+
+.bold {
+  font-weight: 700;
 }
 
 /*** Mobile ***/
@@ -49,7 +75,7 @@ header {
   padding: 1em 1.5em;
 }
 
-header nav {
+header > nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -61,20 +87,20 @@ header nav {
   align-items: center;
   font-weight: 700;
   gap: 0.3rem;
-  font-size: 0.9rem;
+  color: var(--heading-color);
 }
 
 .heading img {
   width: 1.5rem;
 }
 
-nav a {
+nav > a {
   font-weight: 600 !important;
   text-decoration: none;
   color: var(--heading_nav-color);
 }
 
-nav a:hover {
+nav > a:hover {
   text-decoration: underline;
 }
 
@@ -88,16 +114,14 @@ main > a {
   background-image: url("/images/Laptop\ Sunset.png");
   background-size: cover;
   background-position: center;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  padding-top: 6em;
   padding-bottom: 1.9em;
   padding-right: 2.8em;
 }
 
 .intro > h1 {
   padding: 0.2em 0 0.2em 0;
+  letter-spacing: var(--letter-space-3);
 }
 
 main > a:hover {
@@ -113,13 +137,13 @@ main > a:hover {
 }
 
 article > img {
-  width: 100%;
   border-radius: 3px;
   padding-bottom: 0.4em;
 }
 article > h2 {
   padding-top: 0.5em;
   padding-bottom: 0.2em;
+  color: var(--blog_title-color);
 }
 
 /** Footer **/
@@ -139,4 +163,27 @@ footer {
 
 .copyright {
   color: var(--copyright-color);
+}
+
+/** new_journey.html **/
+.new-journey {
+  color: var(--date-color);
+}
+.new_journey-main {
+  padding-top: 2em;
+}
+
+.new_journey-date {
+  font-size: var(--12px_font-size);
+}
+
+.new-journey > h1 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  letter-spacing: var(--letter-space-3);
+}
+
+.new-journey > img {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
