@@ -31,20 +31,9 @@ img {
   width: 50%;
 }
 
-header img {
-  width: 1.5rem;
-}
+/*** Mobile ***/
 
-.intro {
-  background-image: url("/images/Laptop\ Sunset.png");
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
+/** Header **/
 header {
   display: flex;
   justify-content: space-between;
@@ -59,16 +48,16 @@ header nav {
   gap: 1rem;
 }
 
-.left_right-padding {
-  padding: 0 1.5em 0 1.5em;
-}
-
 .heading {
   display: flex;
   align-items: center;
   font-weight: 700;
   gap: 0.3rem;
   font-size: 0.9rem;
+}
+
+.heading img {
+  width: 1.5rem;
 }
 
 nav a {
@@ -79,4 +68,20 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+/* Utility Class */
+.left_right-padding {
+  padding: 0 1.5em 0 1.5em;
+}
+
+/** Main **/
+.intro {
+  background-image: url("/images/Laptop\ Sunset.png");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
