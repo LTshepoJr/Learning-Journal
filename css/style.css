@@ -26,6 +26,9 @@
   --default-white: #ffffff;
   --heading_nav-color: #090909;
   --blog-text: #505050;
+  --footer_bg-color: #202020;
+  --footer-color: #ececec;
+  --copyright-color: #d7d7d7;
 }
 /* Utility Class */
 .left_right-padding {
@@ -120,3 +123,20 @@ article > h2 {
 }
 
 /** Footer **/
+footer {
+  background-color: var(--footer_bg-color);
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: var(--footer-color);
+  font-size: 0.825rem;
+}
+
+.footer-title {
+  font-weight: 700;
+  letter-spacing: -3%;
+}
+
+.copyright {
+  color: var(--copyright-color);
+}
