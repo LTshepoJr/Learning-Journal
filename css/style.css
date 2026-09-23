@@ -26,9 +26,9 @@
   --default-white: #ffffff;
   --heading_nav-color: #090909;
 }
-
-img {
-  width: 50%;
+/* Utility Class */
+.left_right-padding {
+  padding: 0 1.5em 0 1.5em;
 }
 
 /*** Mobile ***/
@@ -70,12 +70,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Utility Class */
-.left_right-padding {
-  padding: 0 1.5em 0 1.5em;
+/** Main **/
+main > a {
+  text-decoration: none;
+  color: var(--default-white);
 }
 
-/** Main **/
 .intro {
   background-image: url("/images/Laptop\ Sunset.png");
   background-size: cover;
@@ -84,4 +84,19 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding-bottom: 1.9em;
+  padding-right: 2.8em;
+}
+
+.intro > h1 {
+  padding: 0.2em 0 0.2em 0;
+}
+
+main > a:hover {
+  text-decoration: underline;
+}
+
+/* Posts */
+img {
+  width: 50%;
 }
